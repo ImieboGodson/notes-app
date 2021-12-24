@@ -1,1 +1,1 @@
-# notes-app
+# Notes Web App (React)
