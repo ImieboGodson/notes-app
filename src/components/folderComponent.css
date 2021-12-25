@@ -1,0 +1,29 @@
+.folderComponent {
+    margin: 10px;
+    /* padding: 35px 30px; */
+    width: 175px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(225, 222, 222, 0.405);
+    border-radius: 5px;
+    border: 1px solid rgba(177, 176, 176, 0.111);
+    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    cursor: pointer;
+}
+
+.folderContent {
+    text-align: center;
+}
+
+.folderIcons {
+    font-size: 1.9rem;
+}
+
+.folderContent p {
+    font-size: 1rem;
+    font-weight: 500;
+}

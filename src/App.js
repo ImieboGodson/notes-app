@@ -1,9 +1,23 @@
 import './App.css';
+import Header from './components/Header';
+import ListComponent from './components/listComponent';
+import Topbar from './components/Topbar';
+// import NoteComponent from './components/noteComponent';
+// import { Folders, Notes } from './data';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello World, Note App Coming Soon</h1>
+
+      {/* Header */}
+      <Header />
+
+      {/* Main */}
+      <main className='main'>
+        <Topbar />
+        <ListComponent />
+      </main>
+      
     </div>
   );
 }
