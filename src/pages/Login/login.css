@@ -7,11 +7,11 @@
 .loginForm {
     width: 35%;
     height: 100%;
-    padding: 20px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: #fff;
     border-right: 1px solid rgba(177, 176, 176, 0.111);
 }
@@ -22,12 +22,16 @@
 }
 
 .welcomeTextContainer {
+    margin-top: 20px;
+    width: 100%;
     padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .welcomeTextBig {
     font-size: 1.09375rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #4b4b5a;
 }
 
@@ -39,7 +43,7 @@
 
 .googleSignInBtn {
     margin: 20px 0;
-    width: 50%;
+    width: 55%;
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -47,12 +51,13 @@
     border: 1px solid #d1d1d1;
     border-radius: 6px;
     cursor: pointer;
+    transition: .2s;
 }
 
 .googleSignInBtn p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    color: black;
+    color: #495057;
 }
 
 .googleLogo {
@@ -65,20 +70,115 @@
     color: #eee;
 }
 
-.loginImageContainer{
-    width: 65%;
-    background-color: black;
+.loginOrText {
+    margin-bottom: 20px;
+    font-size: 1.09375rem;
+    font-weight: 600;
+    color: #4b4b5a;
 }
 
+.loginTextContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.loginText {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+form {
+    width: 100%;
+}
+
+.formLabel {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.rememberMeLabel {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #495057;
+}
 
 .container {
+    width: 100%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 .formItem {
+    margin-bottom: 5px;
+}
+
+.formBox {
     margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 1px solid #eee; */
+}
+
+.emailInputContainer {
+    margin-bottom: 20px;
+}
+
+.formIcons {
+    /* font-size: 2rem; */
+    width: 14%;
+    height: 48px;
+    padding: 11px;
+    color: #495057;
+    border: 1px solid #eee;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formBoxInput {
+    width: 86%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formBoxInput:focus-within {
+    outline: none;
+    border: 1px solid #d1d1d1;
+}
+
+.loginBtn {
+    margin: 20px 0;
+    width: 100%;
+    /* height: 30px; */
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.loginBtn:hover {
+    background-color: #000;
+}
+
+
+.loginImageContainer{
+    width: 65%;
+    background-color: black;
 }
