@@ -1,0 +1,53 @@
+.loginHeader {
+    margin: 0 20px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+}
+
+
+.dashboardHeader {
+    margin: 0 20px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(247, 245, 245, 0.405); */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
+
+.navbarList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbarItem {
+    margin-right: 7px;
+}
+
+.navProfileImage {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.profileName {
+    font-size: .9rem;
+    font-weight: 700;
+}

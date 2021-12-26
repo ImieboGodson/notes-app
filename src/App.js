@@ -1,9 +1,26 @@
 import './App.css';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Login from './pages/Login/Login';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
+import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello World, Note App Coming Soon</h1>
+
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/login" element={ <Login /> } />
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
+      
     </div>
   );
 }

@@ -1,0 +1,58 @@
+.noteCard {
+    margin: 10px;
+    width: 220px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(248, 244, 244, 0.645);
+    border-radius: 5px;
+    border: 1px solid rgba(177, 176, 176, 0.111);
+    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    cursor: pointer;
+}
+
+.date {
+    font-size: .6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(112, 112, 112, 0.912);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.tagsContainer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tags {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: .7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgba(87, 87, 87, 0.912);
+    background-color: rgba(177, 176, 176, 0.111);
+    border-radius: 5px;
+}
+
+.body {
+    margin-top: 15px;
+    padding: 25px 0 10px 0;
+    border-top: 1px solid rgba(213, 211, 211, 0.378);
+}
+
+.bodyText {
+    font-size: .75rem;
+    font-weight: 400;
+    color: rgba(87, 87, 87, 0.912);
+}
