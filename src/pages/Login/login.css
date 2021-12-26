@@ -1,0 +1,84 @@
+.login {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.loginForm {
+    width: 35%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    border-right: 1px solid rgba(177, 176, 176, 0.111);
+}
+
+.loginForm p {
+    /* font-size: 0.875rem; */
+    color: #495057;
+}
+
+.welcomeTextContainer {
+    padding: 10px 0;
+}
+
+.welcomeTextBig {
+    font-size: 1.09375rem;
+    font-weight: 600;
+    color: #4b4b5a;
+}
+
+.welcomeTextSmall {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(146, 146, 146);
+}
+
+.googleSignInBtn {
+    margin: 20px 0;
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.googleSignInBtn p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.googleLogo {
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+.googleSignInBtn:hover {
+    background-color: #eee;
+    color: #eee;
+}
+
+.loginImageContainer{
+    width: 65%;
+    background-color: black;
+}
+
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formItem {
+    margin-bottom: 10px;
+}

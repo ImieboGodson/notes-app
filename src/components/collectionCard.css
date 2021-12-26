@@ -1,8 +1,8 @@
-.folderComponent {
+.collectionCard {
     margin: 10px;
     /* padding: 35px 30px; */
-    width: 175px;
-    height: 170px;
+    width: 195px;
+    height: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,15 +15,15 @@
     cursor: pointer;
 }
 
-.folderContent {
+.collectionCardContent {
     text-align: center;
 }
 
-.folderIcons {
+.collectionCardIcons {
     font-size: 1.9rem;
 }
 
-.folderContent p {
+.collectionCardContent p {
     font-size: 1rem;
     font-weight: 500;
 }

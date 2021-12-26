@@ -49,6 +49,27 @@ const Notes = [
         title: 'I See What The Trouble Is.',
         body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
     },
+    {
+        id: 4,
+        date: '03 jan',
+        tags: ['frontend', 'task', 'job', 'gig'],
+        title: 'I See What The Trouble Is.',
+        body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
+    },
+    {
+        id: 5,
+        date: '03 jan',
+        tags: ['frontend', 'task', 'job', 'gig'],
+        title: 'I See What The Trouble Is.',
+        body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
+    },
+    {
+        id: 6,
+        date: '03 jan',
+        tags: ['frontend', 'task', 'job', 'gig'],
+        title: 'I See What The Trouble Is.',
+        body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
+    },
 ]
 
 export { Folders, Notes }

@@ -1,17 +1,17 @@
-import FolderComponent from './folderComponent'
-import NoteComponent from './noteComponent'
+import CollectionCard from './CollectionCard'
+import NoteCard from './NoteCard'
 import { Folders, Notes } from '../data';
 import './listComponent.css'
 
-const listComponent = () => {
+const ListComponent = ({ view }) => {
 
-    const tapped = 'notes';
+    // const tapped = 'notes';
 
     const FoldersListComponent = () => {
         return (
             <>
                 { Folders.map((f) => {
-                    return <FolderComponent key={f.id} folder={f}/>
+                    return <CollectionCard key={f.id} folder={f}/>
                 }) }
             </>
         )
@@ -22,7 +22,7 @@ const listComponent = () => {
         return (
             <>
                 { Notes.map((n) => {
-                    return <NoteComponent key={n.id} note={n}/>
+                    return <NoteCard key={n.id} note={n}/>
                 }) }
             </>
         )
@@ -33,7 +33,7 @@ const listComponent = () => {
     return (
         <div className='listComponent'>
           {
-              (tapped !== 'notes')
+              (view !== 'notes')
               ?
               <FoldersListComponent />
               :
@@ -43,4 +43,4 @@ const listComponent = () => {
     )
 }
 
-export default listComponent
+export default ListComponent

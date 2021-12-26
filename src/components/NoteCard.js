@@ -1,13 +1,13 @@
-import './noteComponent.css'
+import './noteCard.css'
 
-const noteComponent = ({ note }) => {
+const NoteCard = ({ note }) => {
     return (
-        <div className='noteComponent'>
+        <div className='noteCard'>
            <p className='date'>{note.date}</p>
            <p className='title'>{note.title}</p>
            <div className='tagsContainer'>
-            { note.tags.map((t) => {
-                return <p className='tags'>{t}</p>
+            { note.tags.map((t, i) => {
+                return <p className='tags' key={i}>{t}</p>
             })}
            </div>
            <div className='body'>
@@ -17,4 +17,4 @@ const noteComponent = ({ note }) => {
     )
 }
 
-export default noteComponent
+export default NoteCard

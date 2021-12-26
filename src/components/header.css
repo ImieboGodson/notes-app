@@ -1,5 +1,16 @@
-.headerComponent {
-    padding: 5px 20px;
+.loginHeader {
+    margin: 0 20px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+}
+
+
+.dashboardHeader {
+    margin: 0 20px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +23,10 @@
     font-weight: 800;
     padding: 2px;
     border: 1px solid black;
-    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
 }
 
 .navbarList {

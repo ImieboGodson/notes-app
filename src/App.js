@@ -1,22 +1,25 @@
 import './App.css';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Login from './pages/Login/Login';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
 import Header from './components/Header';
-import ListComponent from './components/listComponent';
-import Topbar from './components/Topbar';
-// import NoteComponent from './components/noteComponent';
-// import { Folders, Notes } from './data';
 
 const App = () => {
   return (
     <div className="App">
 
-      {/* Header */}
+    <BrowserRouter>
       <Header />
-
-      {/* Main */}
-      <main className='main'>
-        <Topbar />
-        <ListComponent />
-      </main>
+      <Routes>
+        <Route path="/login" element={ <Login /> } />
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
       
     </div>
   );
