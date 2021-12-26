@@ -16,11 +16,6 @@
     border-right: 1px solid rgba(177, 176, 176, 0.111);
 }
 
-.loginForm p {
-    /* font-size: 0.875rem; */
-    color: #495057;
-}
-
 .welcomeTextContainer {
     margin-top: 20px;
     width: 100%;
@@ -35,11 +30,11 @@
     color: #4b4b5a;
 }
 
-.welcomeTextSmall {
+/* .welcomeTextSmall {
     font-size: 0.8rem;
     font-weight: 500;
     color: rgb(146, 146, 146);
-}
+} */
 
 .googleSignInBtn {
     margin: 20px 0;
@@ -177,8 +172,16 @@ form {
     background-color: #000;
 }
 
+.bottomInfoText {
+    margin-right: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
 
 .loginImageContainer{
     width: 65%;
+    height: 100%;
     background-color: black;
 }

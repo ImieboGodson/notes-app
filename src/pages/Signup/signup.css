@@ -1,0 +1,89 @@
+.signup {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.signupForm {
+    width: 35%;
+    height: 100%;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-right: 1px solid rgba(177, 176, 176, 0.111);
+}
+
+.shortTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeTextSmall {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(146, 146, 146);
+}
+
+
+.googleSignInBtn {
+    margin: 20px 0;
+    width: 55%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.googleSignInBtn p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.googleLogo {
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+.googleSignInBtn:hover {
+    background-color: #eee;
+    color: #eee;
+}
+
+.loginOrText {
+    margin-bottom: 20px;
+    font-size: 1.09375rem;
+    font-weight: 600;
+    color: #4b4b5a;
+}
+
+
+.formNameBoxContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signupFormBox {
+    width: 48%;
+}
+
+.formNameBoxInput {
+    width: 100%;
+}
+
+.firstNameFormBoxInput {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
