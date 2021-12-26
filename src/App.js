@@ -8,6 +8,7 @@ import {
   Navigate
 } from "react-router-dom";
 import Header from './components/Header';
+import Signup from './pages/Signup/Signup';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/login" element={ <Login /> } />
+        <Route path="/signup" element={ <Signup /> } />
         <Route path="/" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>

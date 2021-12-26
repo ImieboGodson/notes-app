@@ -1,7 +1,9 @@
 import { FcGoogle } from "react-icons/fc";
-import { HiOutlineMail, HiLockClosed } from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
 import { CgLock } from "react-icons/cg";
+import { Link } from "react-router-dom";
 import './login.css'
+
 
 const Login = () => {
     return (
@@ -41,6 +43,10 @@ const Login = () => {
                         
                     </div>
                 </form>
+                <div className='bottomInfoTextContainer'>
+                    <p className='bottomInfoText'>Don't have an account? <Link className="linkText" style={{textDecoration: 'none', fontWeight: '600', color: '#000'}} to={'/signup'}>Sign Up</Link></p>
+                    
+                </div>
             </div>
             <div className='loginImageContainer'>
                 PICTURE GOES HERE
