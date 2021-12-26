@@ -16,26 +16,29 @@ const Login = () => {
                     <FcGoogle  className='googleLogo'/>
                 </div>
                 <p className="loginOrText">Or</p>
-                <p className='loginText'>Login with email or phone number</p>
+                <div className='loginTextContainer'>
+                    <p className='loginText'>Login with email or phone number</p>
+                </div>
                 <form>
                     <div class="container">
-                        <label className='formItem' for="uname"><b>Email</b></label>
-                        <div className='formItem emailInputContainer'>
+                        <label className='formItem formLabel' for="uname">Email</label>
+                        <div className='formItem formBox emailInputContainer'>
                             <HiOutlineMail className='formIcons'/>
-                            <input type="text" placeholder="Enter your Email Address" name="uname" required/>
+                            <input className='formBoxInput' type="text" placeholder="Enter your Email Address" name="uname" required/>
                         </div>
 
-                        <label className='formItem' for="psw"><b>Password</b></label>
-                        <div className='formItem passwordInputContainer'>
+                        <label className='formItem formLabel' for="psw">Password</label>
+                        <div className='formItem formBox passwordInputContainer'>
                             <CgLock className='formIcons'/>
-                            <input type="password" placeholder="Enter your password" name="psw" required/>
+                            <input className='formBoxInput' type="password" placeholder="Enter your password" name="psw" required/>
                         </div>
                         
-                            
-                        <button type="submit">Login</button>
-                        <label>
+                        <label className='rememberMeLabel'>
                         <input type="checkbox" checked="checked" name="remember"/> Remember me
                         </label>
+                            
+                        <button className='loginBtn' type="submit">Log In</button>
+                        
                     </div>
                 </form>
             </div>
