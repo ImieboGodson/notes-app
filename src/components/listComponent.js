@@ -2,6 +2,7 @@ import CollectionCard from './CollectionCard'
 import NoteCard from './NoteCard'
 import { Folders, Notes } from '../data';
 import './listComponent.css'
+import AddNewButton from './AddNewButton';
 
 const ListComponent = ({ view }) => {
 
@@ -39,6 +40,7 @@ const ListComponent = ({ view }) => {
               :
               <NotesListComponent />
           }  
+          <AddNewButton view={view}/>
         </div>
     )
 }
