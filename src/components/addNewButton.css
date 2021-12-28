@@ -1,0 +1,25 @@
+.addNewButton {
+    position: fixed;
+    bottom: 15px;
+    left: 41%;
+    /* right: 50%; */
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 7px -12px 122px 16px rgba(255,255,255,0.66);
+-webkit-box-shadow: 7px -12px 122px 16px rgba(255,255,255,0.66);
+-moz-box-shadow: 7px -12px 122px 16px rgba(255,255,255,0.66);
+}
+
+.addNewButtonIcon {
+    margin-right: 7px;
+    font-size: 1.4rem;
+    /* font-weight: 800; */
+    color: #fff;
+}
