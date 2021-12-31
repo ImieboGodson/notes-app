@@ -1,1 +1,1 @@
-# Notes Web App (React)
+# Notes Web App Client Side (React)

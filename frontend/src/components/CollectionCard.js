@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CollectionCard = ({ folder }) => {
     return (
-        <Link to={'/collections/:id'} style={{textDecoration: 'none', color: '#000'}}>
+        <Link to={`/collections/${folder.id}`} style={{textDecoration: 'none', color: '#000'}}>
             <div className='collectionCard'>
                 <div className='collectionCardContent'>
                     <FcFolder className='collectionCardIcons'/>

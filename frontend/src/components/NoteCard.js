@@ -3,7 +3,7 @@ import './noteCard.css'
 
 const NoteCard = ({ note }) => {
     return (
-        <Link to={'./notes/:id'} style={{textDecoration: 'none', color: '#000'}}>
+        <Link to={`./notes/${note.id}`} style={{textDecoration: 'none', color: '#000'}}>
             <div className='noteCard'>
                 <p className='date'>{note.date}</p>
                 <p className='title'>{note.title}</p>

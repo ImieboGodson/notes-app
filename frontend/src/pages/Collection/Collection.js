@@ -1,9 +1,12 @@
+import SecondaryNavbar from '../../components/SecondaryNavbar'
 import './collection.css'
 
 const Collection = () => {
     return (
         <div className='collection'>
-            COLLECTION PAGE
+            <div className='inWrapper'>
+                <SecondaryNavbar />
+            </div>
         </div>
     )
 }

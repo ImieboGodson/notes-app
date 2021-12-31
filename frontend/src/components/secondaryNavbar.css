@@ -1,0 +1,25 @@
+.secondaryNavbar {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.secondaryNavbarItem {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.secondaryNavbarIcon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.secondaryNavbarText {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
