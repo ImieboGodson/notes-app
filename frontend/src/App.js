@@ -7,12 +7,14 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
+// import { useState } from 'react';
 import Header from './components/Header';
 import Signup from './pages/Signup/Signup';
 import Collection from './pages/Collection/Collection';
 import Note from './pages/Note/Note';
 
 const App = () => {
+
   return (
     <div className="App">
 

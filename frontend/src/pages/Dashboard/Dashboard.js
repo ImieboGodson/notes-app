@@ -1,6 +1,7 @@
 import ListComponent from '../../components/ListComponent'
 import { useState } from 'react';
 import './dashboard.css'
+import SecondaryNavbar from '../../components/SecondaryNavbar';
 
 const Dashboard = () => {
     // ViewState Management
@@ -32,12 +33,13 @@ const Dashboard = () => {
             {/* Main */}
             <main className='main'>
                 {/* Topbar */}
-                <div className='topbar'>
+                {/* <div className='topbar'>
                     <ul className='topbarNavList'>
                         <li id='notesViewButton' className={`topbarNavItems ${viewState === 'notes' ? 'active' : ''}`} onClick={onNotesViewChange}>All Notes</li>
                         <li id='collectionsViewButton' className='topbarNavItems' onClick={onCollectionsViewChange}>Collections</li>
                     </ul>
-                </div>
+                </div> */}
+                <SecondaryNavbar view={viewState} onNoteViewChange={() => this.onNotesViewChange()} onCollectionsViewChange={() => this.onCollectionsViewChange()}/>
                 {/* ListComponent */}
                 <ListComponent view={viewState} />
             </main>
