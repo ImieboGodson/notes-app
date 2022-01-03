@@ -33,6 +33,7 @@ const Notes = [
         date: '23 dec',
         title: 'The Era of Cracks',
         tags: ['idea', 'product', 'design'],
+        subtitle: 'Seeking My Own',
         body: 'I will seek his own, but another time, or he shuns it is so, but we reject the pleasure of all is what man is there it is either held in the pleasures of the pain that we can become neither" a'
     },
     {

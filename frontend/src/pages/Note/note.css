@@ -7,3 +7,95 @@
     max-width: 800px;
     margin: 20px auto;
 }
+
+.noteMainWrapper {
+    margin: 20px 0;
+}
+
+.noteTitle {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.noteTopSectionWrapper {
+    margin: 10px 0;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.noteTopSectionItem {
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemTitleWrapper {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemTitle {
+    font-size: 1.1rem;
+    color: rgba(87, 87, 87, 0.912);
+}
+
+.itemDetails {
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.userProfileImage {
+    margin-right: 4px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.userProfileName {
+    font-size: 1.1rem;
+    /* font-weight: 500; */
+    color: black;
+}
+
+.lastModifiedValue {
+    margin-left: 4px;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.addNewTagIcon {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    padding: 1px;
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.itemDetails .tags {
+    margin-right: 10px;
+    padding: 5px 7px;
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(87, 87, 87, 0.912);
+}
+
+.noteMainSectionWrapper {
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.noteBodyTitleText {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.noteBodyText {
+    font-size: 1.1rem;
+}
