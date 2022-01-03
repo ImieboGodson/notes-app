@@ -1,5 +1,6 @@
 .secondaryNavbar {
     margin-top: 40px;
+    padding: 20px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -22,4 +23,31 @@
 .secondaryNavbarText {
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+
+.topbar {
+    margin-top: 20px;
+}
+  
+.topbarNavList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.topbarNavItems {
+    margin: 0 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(112, 112, 112, 0.912);
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
+  
+.topbarNavItems.active {
+    color: black;
+    border-bottom: 3px solid black;
 }
