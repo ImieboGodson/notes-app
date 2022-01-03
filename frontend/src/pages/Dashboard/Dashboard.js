@@ -7,24 +7,15 @@ const Dashboard = () => {
     // ViewState Management
     const [viewState, setViewState] = useState('notes');
 
-    // Declaring and attaching functions to topbar buttons
-    const notesViewBtn = document.getElementById('notesViewButton');
-    const collectionsViewBtn = document.getElementById('collectionsViewButton');
   
     // Changes View to Notes View and Updates ViewState
     const onNotesViewChange = () => {
-      notesViewBtn.classList.add('active');
-      collectionsViewBtn.classList.remove('active');
       setViewState('notes');
     }
   
     // Changes View to Collections View and Updates ViewState
     const onCollectionsViewChange = () => {
-      if(viewState === 'notes') {
         setViewState('collections');
-        notesViewBtn.classList.remove('active');
-      }
-      collectionsViewBtn.classList.add('active');
     }
 
 
@@ -39,7 +30,7 @@ const Dashboard = () => {
                         <li id='collectionsViewButton' className='topbarNavItems' onClick={onCollectionsViewChange}>Collections</li>
                     </ul>
                 </div> */}
-                <SecondaryNavbar view={viewState} onNoteViewChange={() => this.onNotesViewChange()} onCollectionsViewChange={() => this.onCollectionsViewChange()}/>
+                <SecondaryNavbar view={viewState} onNoteViewChange={() => onNotesViewChange()} onCollectionViewChange={() => onCollectionsViewChange()}/>
                 {/* ListComponent */}
                 <ListComponent view={viewState} />
             </main>
