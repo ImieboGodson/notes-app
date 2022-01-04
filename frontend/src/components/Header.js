@@ -16,9 +16,9 @@ const Header = () => {
         )
     }
 
-    const DashboardHeader = () => {
+    const InAppHeader = () => {
         return (
-            <div className='dashboardHeader'>
+            <div className='inAppHeader'>
                 <Link to={'/'} style={{textDecoration: 'none', color: '#000'}}>
                     <p className='logo'>.N</p>
                 </Link>
@@ -39,7 +39,7 @@ const Header = () => {
                 ?
                 <LoginPageHeader />
                 :
-                <DashboardHeader />
+                <InAppHeader />
             }
         </>
     )

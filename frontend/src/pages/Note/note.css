@@ -4,8 +4,8 @@
 
 .inWrapper {
     position: relative;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 70px auto 20px auto;
 }
 
 .noteMainWrapper {
@@ -93,9 +93,11 @@
 
 .noteBodyTitleText {
     margin-bottom: 20px;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .noteBodyText {
     font-size: 1.1rem;
+    line-height: 28px;
 }

@@ -3,3 +3,7 @@
     /* height: 100vh; */
     /* background-color: black; */
 }
+
+.collection .inWrapper {
+    max-width: 730px;
+}

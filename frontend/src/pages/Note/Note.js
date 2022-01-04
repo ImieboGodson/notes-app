@@ -24,7 +24,7 @@ const Note = () => {
                             </div>
                             <div className='itemDetails'>
                                 <img className='userProfileImage' src={process.env.PUBLIC_URL + '/assets/default-image.png'} alt='profile img'/>
-                                <p className='userProfileName'>Floyd Lawton</p>
+                                <p className='userProfileName'>{note.author}</p>
                             </div>
                         </div>
                         <div className='noteTopSectionItem'>
