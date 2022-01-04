@@ -4,16 +4,29 @@ import { Folders, Notes } from '../data';
 import './listComponent.css'
 import AddNewButton from './AddNewButton';
 
-const ListComponent = ({ view }) => {
+const ListComponent = ({ view, collectionObj }) => {
 
-    // const tapped = 'notes';
+    
 
     const FoldersListComponent = () => {
         return (
             <>
-                { Folders.map((f) => {
-                    return <CollectionCard key={f.id} folder={f}/>
-                }) }
+                { 
+                    (!collectionObj)
+                    ?
+                    (Folders.map((f) => {
+                        return <CollectionCard key={f.id} folder={f}/>
+                    }))
+                    :
+                    (
+                        collectionObj.notes.map((i) => {
+                            const filteredNotesByCollection = Notes.filter(n => n.id.toString() === i)
+                            return filteredNotesByCollection.map((n) => {
+                                return <NoteCard key={n.id} note={n}/>
+                            })
+                        })
+                    )
+                 }
             </>
         )
     }
