@@ -19,12 +19,16 @@ const ListComponent = ({ view, collectionObj }) => {
                     }))
                     :
                     (
-                        collectionObj.notes.map((i) => {
+                        (collectionObj.notes.length < 1)
+                        ?
+                        (<p>PRETTY EMPTY IN HERE</p>)
+                        :
+                        (collectionObj.notes.map((i) => {
                             const filteredNotesByCollection = Notes.filter(n => n.id.toString() === i)
                             return filteredNotesByCollection.map((n) => {
                                 return <NoteCard key={n.id} note={n}/>
                             })
-                        })
+                        }))
                     )
                  }
             </>
