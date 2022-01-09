@@ -3,6 +3,7 @@ import ListComponent from '../../components/ListComponent'
 import { useLocation } from 'react-router-dom'
 import './collection.css'
 import { Folders } from '../../data'
+import Header from '../../components/Header'
 
 const Collection = () => {
 
@@ -13,6 +14,7 @@ const Collection = () => {
 
     return (
         <div className='collection'>
+            {/* <Header /> */}
             <div className='inWrapper'>
                 <SecondaryNavbar />
                 <ListComponent collectionObj={collection}/>
