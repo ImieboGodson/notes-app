@@ -1,3 +1,8 @@
+.headerWrapper {
+    position: relative;
+}
+
+
 .loginHeader {
     margin: 0 20px;
     padding: 10px 10px;
@@ -35,12 +40,14 @@
 }
 
 .navbarList {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     cursor: pointer;
 }
+
 
 .navbarItem {
     margin-right: 7px;
@@ -53,6 +60,42 @@
 }
 
 .profileName {
-    font-size: .9rem;
-    font-weight: 700;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.userDetailsDropdown {
+    position: absolute;
+    top: 45px;
+    right: 6px;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 8px;
+    transition: .5s;
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 4%);
+    overflow: hidden;
+    display: none;
+}
+
+
+.userDetailsDropdown.display {
+    display: block;
+}
+
+.userDetailsItem {
+    min-width: 200px;
+    /* min-height: 50px; */
+    padding: 12px 15px;
+    font-size: .95rem;
+    color: #6e6d7a;
+    background-color: #fff;
+    transition: color 200ms ease;
+}
+
+.userDetailsItem:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.userDetailsItem span {
+    font-weight: 600;
 }

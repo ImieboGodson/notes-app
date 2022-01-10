@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './header.css'
 import Search from './Search'
@@ -17,6 +18,17 @@ const Header = () => {
     }
 
     const InAppHeader = () => {
+
+        const [dropdown, setDropdown] = useState(false)
+
+        const dropdownFunc = () => {
+            dropdown 
+            ? 
+            setDropdown(false)
+            :
+            setDropdown(true)
+        }
+        
         return (
             <div className='inAppHeader'>
                 <Link to={'/'} style={{textDecoration: 'none', color: '#000'}}>
@@ -24,16 +36,27 @@ const Header = () => {
                 </Link>
                 
                 <Search />
-                <ul className='navbarList'>
+                <ul className='navbarList' onClick={dropdownFunc}>
                     <li className='navbarItem'><img className='navProfileImage' src={process.env.PUBLIC_URL + '/assets/default-image.png'} alt='profile img'/></li>
                     <li className='navbarItem profileName'>Profile Name</li>
+                    <div id='userDetailsDropdown' className={`userDetailsDropdown ${(dropdown ? 'display' : '')}`}>
+                        {/* <div className='userDetailsItem'>
+                            <p>Signed in as <span>James Blunt</span></p>
+                        </div> */}
+                        <div className='userDetailsItem'>
+                            <p>Account Settings</p>
+                        </div>
+                        <div className='userDetailsItem'>
+                            <p><span>Signed out</span></p>
+                        </div>
+                    </div>
                 </ul>
             </div>
         )
     }
 
     return (
-        <>
+        <div className='headerWrapper'>
             {
                 (path === 'login' || path === 'signup')
                 ?
@@ -41,7 +64,7 @@ const Header = () => {
                 :
                 <InAppHeader />
             }
-        </>
+        </div>
     )
 }
 
