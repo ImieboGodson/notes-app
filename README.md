@@ -37,7 +37,7 @@
 
 
 
-This project is a result of experimental thoughts of what the idea notes app should feel and function like. It will continue to evolve and take different shapes and style, as I continue to redefine what the idea note is to me. The goal is to create notes application I am continuously happy to use and maintain.
+This project is a result of experimental thoughts of what the idea notes app should feel and function like. It will continue to evolve and take different shapes and style, as I continue to redefine what the idea notes app is to me. The goal is to create a notes application I am continuously happy to use and maintain.
 
 <!-- You can checkout the [demo](https://my-team-page1.netlify.app/). -->
 
