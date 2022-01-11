@@ -4,12 +4,14 @@ import { Notes } from '../../data'
 import { IoAddSharp } from "react-icons/io5";
 import './note.css'
 
-const Note = () => {
+const Note = ({ noteType }) => {
 
     const location = useLocation()
-    const path = location.pathname.split('/')[2]
-    const note = Notes.find(n => n.id.toString() === path)
-    console.log(note)
+    const path = location.pathname.split('/')
+    const noteId = (noteType === 'fromCollections') ? path[4] : path[2]
+    const note = Notes.find(n => n.id.toString() === noteId)
+    console.log(location)
+    console.log(noteType)
 
     return (
         <div className='note'>

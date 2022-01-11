@@ -47,7 +47,7 @@ const Header = () => {
                             <p>Account Settings</p>
                         </div>
                         <div className='userDetailsItem'>
-                            <p><span>Signed out</span></p>
+                            <p><span>Sign out</span></p>
                         </div>
                     </div>
                 </ul>
