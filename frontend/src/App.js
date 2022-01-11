@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/" element={<Dashboard />} />
         <Route path="/collections/:id" element={<Collection />} />
         <Route path="/notes/:id" element={<Note />} />
+        <Route path="/collections/:id/notes/:id" element={<Note noteType={'fromCollections'}/>} />
       </Routes>
     </BrowserRouter>
       
