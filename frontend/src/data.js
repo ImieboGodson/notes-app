@@ -37,6 +37,7 @@ const Notes = [
         id: 1,
         author: 'James Bond',
         date: '23 dec',
+        collection: ['My Notes', 'Projects'],
         title: 'The Era of Cracks',
         tags: ['idea', 'product', 'design'],
         subtitle: 'Seeking My Own',
@@ -46,6 +47,7 @@ const Notes = [
         id: 2,
         author: 'James Bond',
         date: '24 dec',
+        collection: ['My Notes', 'Business'],
         title: '...And It Is Blinding',
         tags: ['talks', 'task', 'lessons'],
         body: 'rejects any and often experience a lot of pleasure take advantage of this provision of any fault do not know what the right thing is the pain, the pleasure of the outdoor'
@@ -54,6 +56,7 @@ const Notes = [
         id: 3,
         author: 'James Bond',
         date: '03 jan',
+        collection: ['My Notes', 'Business'],
         tags: ['frontend', 'task', 'job', 'gig'],
         title: 'I See What The Trouble Is.',
         subtitle: 'The Genesis',
@@ -63,6 +66,7 @@ const Notes = [
         id: 4,
         author: 'James Bond',
         date: '03 jan',
+        collection: ['My Notes', 'Projects'],
         tags: ['frontend', 'task', 'job', 'gig'],
         title: 'I See What The Trouble Is.',
         body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
@@ -71,6 +75,7 @@ const Notes = [
         id: 5,
         author: 'James Bond',
         date: '03 jan',
+        collection: ['My Notes', 'Projects'],
         tags: ['frontend', 'task', 'job', 'gig'],
         title: 'I See What The Trouble Is.',
         body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
@@ -79,6 +84,7 @@ const Notes = [
         id: 6,
         author: 'James Bond',
         date: '03 jan',
+        collection: ['My Notes'],
         tags: ['frontend', 'task', 'job', 'gig'],
         title: 'I See What The Trouble Is.',
         body: 'but the just, and by what right of denouncing pleasure and blinded a man to pay all or discomfort, and the election or for the pleasure of his hatred, and the pains of labor, and is willing to, or'
