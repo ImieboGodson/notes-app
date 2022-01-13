@@ -2,7 +2,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { useLocation } from "react-router-dom";
 import './secondaryNavbar.css'
 
-const SecondaryNavbar = ({ view, onCollectionViewChange, onNoteViewChange }) => {
+const SecondaryNavbar = ({ view, onCollectionViewChange, onNoteViewChange, noteCollection }) => {
     const location = useLocation()
     const path = location.pathname.toString()
 
@@ -19,12 +19,17 @@ const SecondaryNavbar = ({ view, onCollectionViewChange, onNoteViewChange }) => 
     }
 
     const NoteAndCollectionSecondaryNavbar = () => {
+
+        const title = noteCollection
+
+        console.log('Collection Name:', title )
+
         return (
             <div className='secondaryNavbar'>
             {/* <Link to={`/`} style={{textDecoration: 'none', color: '#000'}}> */}
                 <div className='secondaryNavbarItem' onClick={() => window.history.back()}>
                     <IoIosArrowBack className='secondaryNavbarIcon'/>
-                    <p className='secondaryNavbarText'>{path.includes('notes') ? 'All Notes' : 'Collections' }</p>
+                    <p className='secondaryNavbarText'>{(path.includes('notes') && (path.includes('collections'))) ? `${title}` : (path.includes('notes') ? 'All Notes' : 'Collections') }</p>
                 </div>
             {/* </Link> */}
             </div>

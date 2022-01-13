@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import SecondaryNavbar from '../../components/SecondaryNavbar'
-import { Notes } from '../../data'
+import { Notes, Folders } from '../../data'
 import { IoAddSharp } from "react-icons/io5";
 import './note.css'
 
@@ -9,14 +9,18 @@ const Note = ({ noteType }) => {
     const location = useLocation()
     const path = location.pathname.split('/')
     const noteId = (noteType === 'fromCollections') ? path[4] : path[2]
+    const collectionId = path[2]
     const note = Notes.find(n => n.id.toString() === noteId)
-    console.log(location)
-    console.log(noteType)
+    console.log(note)
+
+    const noteCategory = Folders.find(n => n.id.toString() === collectionId)
+
+    console.log( 'Note Category on Note Page:', noteCategory)
 
     return (
         <div className='note'>
             <div className='inWrapper'>
-                <SecondaryNavbar />
+                <SecondaryNavbar noteCollection={noteCategory.title}/>
                 <main className='noteMainWrapper'>
                     <div className='noteTopSectionWrapper'>
                         <h1 className='noteTitle'>{note.title}</h1>
