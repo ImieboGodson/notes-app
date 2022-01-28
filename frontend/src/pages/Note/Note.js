@@ -20,7 +20,7 @@ const Note = ({ noteType }) => {
     return (
         <div className='note'>
             <div className='inWrapper'>
-                <SecondaryNavbar noteCollection={noteCategory.title}/>
+                <SecondaryNavbar/>
                 <main className='noteMainWrapper'>
                     <div className='noteTopSectionWrapper'>
                         <h1 className='noteTitle'>{note.title}</h1>
