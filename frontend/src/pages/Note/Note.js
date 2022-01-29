@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import SecondaryNavbar from '../../components/SecondaryNavbar'
+import SecondaryNavbar from '../../components/secondaryNavbar/SecondaryNavbar'
 import { Notes, Folders } from '../../data'
 import { IoAddSharp } from "react-icons/io5";
 import './note.css'
@@ -20,7 +20,7 @@ const Note = ({ noteType }) => {
     return (
         <div className='note'>
             <div className='inWrapper'>
-                <SecondaryNavbar noteCollection={noteCategory.title}/>
+                <SecondaryNavbar/>
                 <main className='noteMainWrapper'>
                     <div className='noteTopSectionWrapper'>
                         <h1 className='noteTitle'>{note.title}</h1>

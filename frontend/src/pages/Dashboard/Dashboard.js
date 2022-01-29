@@ -1,7 +1,7 @@
-import ListComponent from '../../components/ListComponent'
+import ListComponent from '../../components/listComponent/ListComponent'
 import { useState } from 'react';
 import './dashboard.css'
-import SecondaryNavbar from '../../components/SecondaryNavbar';
+import SecondaryNavbar from '../../components/secondaryNavbar/SecondaryNavbar';
 
 const Dashboard = () => {
     // ViewState Management
