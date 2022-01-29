@@ -8,7 +8,7 @@ import {
   Navigate
 } from "react-router-dom";
 // import { useState } from 'react';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import Signup from './pages/Signup/Signup';
 import Collection from './pages/Collection/Collection';
 import Note from './pages/Note/Note';

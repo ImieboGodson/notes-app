@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './header.css'
-import Search from './Search'
+import Search from '../search/Search'
 
 const Header = () => {
 

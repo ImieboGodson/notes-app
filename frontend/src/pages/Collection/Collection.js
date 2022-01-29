@@ -1,5 +1,5 @@
-import SecondaryNavbar from '../../components/SecondaryNavbar'
-import ListComponent from '../../components/ListComponent'
+import SecondaryNavbar from '../../components/secondaryNavbar/SecondaryNavbar'
+import ListComponent from '../../components/listComponent/ListComponent'
 import { useLocation } from 'react-router-dom'
 import './collection.css'
 import { Folders } from '../../data'
