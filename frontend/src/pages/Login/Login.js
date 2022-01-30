@@ -49,7 +49,7 @@ const Login = () => {
                 </div>
             </div>
             <div className='loginImageContainer'>
-                PICTURE GOES HERE
+                <img className='loginImage' src={process.env.PUBLIC_URL + '/assets/images/notes-signin-image.jpg'} alt='notes img'/>
             </div>
         </div>
     )

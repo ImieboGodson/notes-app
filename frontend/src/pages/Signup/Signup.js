@@ -53,7 +53,7 @@ const Signup = () => {
                 </div>
             </div>
             <div className='loginImageContainer'>
-                PICTURE GOES HERE
+                <img className='loginImage' src={process.env.PUBLIC_URL + '/assets/images/notes-signup-image.jpg'} alt='notes img'/>
             </div>
         </div>
     )

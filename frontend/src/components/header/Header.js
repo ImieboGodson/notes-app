@@ -37,7 +37,7 @@ const Header = () => {
                 
                 <Search />
                 <ul className='navbarList' onClick={dropdownFunc}>
-                    <li className='navbarItem'><img className='navProfileImage' src={process.env.PUBLIC_URL + '/assets/default-image.png'} alt='profile img'/></li>
+                    <li className='navbarItem'><img className='navProfileImage' src={process.env.PUBLIC_URL + '/assets/images/default-image.png'} alt='profile img'/></li>
                     <li className='navbarItem profileName'>Profile Name</li>
                     <div id='userDetailsDropdown' className={`userDetailsDropdown ${(dropdown ? 'display' : '')}`}>
                         {/* <div className='userDetailsItem'>
