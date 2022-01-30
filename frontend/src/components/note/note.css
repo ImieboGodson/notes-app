@@ -1,0 +1,18 @@
+.overlayBackground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noteWrapper {
+    width: 50%;
+    height: 60%;
+    background-color: #fff;
+    border: 1px solid #000;
+}

@@ -29,7 +29,7 @@ const Note = ({ noteType }) => {
                                 <p className='itemTitle'>Created by</p>
                             </div>
                             <div className='itemDetails'>
-                                <img className='userProfileImage' src={process.env.PUBLIC_URL + '/assets/default-image.png'} alt='profile img'/>
+                                <img className='userProfileImage' src={process.env.PUBLIC_URL + '/assets/images/default-image.png'} alt='profile img'/>
                                 <p className='userProfileName'>{note.author}</p>
                             </div>
                         </div>
