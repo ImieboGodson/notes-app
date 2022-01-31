@@ -1,4 +1,4 @@
-import 'note.css';
+import './note.css';
 
 const Note = () => {
   return (
