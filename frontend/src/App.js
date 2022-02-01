@@ -11,7 +11,8 @@ import {
 import Header from './components/header/Header';
 import Signup from './pages/Signup/Signup';
 import Collection from './pages/Collection/Collection';
-import Note from './pages/Note/Note';
+import NotePage from './pages/Note/Note';
+import Note from './components/note/Note';
 
 const App = () => {
 
@@ -25,9 +26,10 @@ const App = () => {
         <Route path="/signup" element={ <Signup /> } />
         <Route path="/" element={<Dashboard />} />
         <Route path="/collections/:id" element={<Collection />} />
-        <Route path="/notes/:id" element={<Note />} />
-        <Route path="/collections/:id/notes/:id" element={<Note noteType={'fromCollections'}/>} />
+        <Route path="/notes/:id" element={<NotePage />} />
+        <Route path="/collections/:id/notes/:id" element={<NotePage noteType={'fromCollections'}/>} />
       </Routes>
+      {/* <Note /> */}
     </BrowserRouter>
       
     </div>
