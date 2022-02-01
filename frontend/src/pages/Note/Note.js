@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import SecondaryNavbar from '../../components/secondaryNavbar/SecondaryNavbar'
 import { Notes, Folders } from '../../data'
-import { IoAddSharp } from "react-icons/io5";
+import { IoAddSharp } from "react-icons/io5"
 import './note.css'
 
 const Note = ({ noteType }) => {
