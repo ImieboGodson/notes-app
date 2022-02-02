@@ -29,7 +29,6 @@ const App = () => {
         <Route path="/notes/:id" element={<NotePage />} />
         <Route path="/collections/:id/notes/:id" element={<NotePage noteType={'fromCollections'}/>} />
       </Routes>
-      {/* <Note /> */}
     </BrowserRouter>
       
     </div>
