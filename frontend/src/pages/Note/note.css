@@ -3,7 +3,7 @@
 }
 
 .inWrapper {
-    position: relative;
+    /* position: relative; */
     max-width: 600px;
     margin: 70px auto 20px auto;
 }

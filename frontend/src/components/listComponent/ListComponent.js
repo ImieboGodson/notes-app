@@ -3,7 +3,6 @@ import NoteCard from '../noteCard/NoteCard'
 import { Folders, Notes } from '../../data';
 import './listComponent.css'
 import AddNewButton from '../addNewButton/AddNewButton';
-import Note from '../note/Note';
 
 const ListComponent = ({ view, collectionObj }) => {
 
@@ -58,7 +57,6 @@ const ListComponent = ({ view, collectionObj }) => {
               :
               <NotesListComponent />
           }
-          <Note />
           <AddNewButton view={view}/>
         </div>
     )

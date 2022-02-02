@@ -12,8 +12,9 @@
 }
 
 .noteWrapper {
-    width: 43%;
-    /* height: 83%; */
+    width: 45%;
+    max-height: 83%;
+    overflow-x: hidden;
     padding: 0 15px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.385);
@@ -21,4 +22,9 @@
     box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
     -webkit-box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
     -moz-box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.21);
+    transition: .5s;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }

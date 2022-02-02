@@ -65,7 +65,7 @@ const Note = ({ noteType }) => {
                       '' 
                   } */}
                   {/* <p className='noteBodyText'>{note.body}</p> */}
-                  <p className='noteBodyText'>body</p>
+                  <p className='noteBodyText'>I will seek his own, but another time, or he shuns it is so, but we reject the pleasure of all is what man is there it is either held in the pleasures of the pain that we can become neither" a I will seek his own, but another time, or he shuns it is so, but we reject the pleasure of all is what man is there it is either held in the pleasures of the pain that we can become neither" a I will seek his own, but another time, or he shuns it is so, but we reject the pleasure of all is what man is there it is either held in the pleasures of the pain that we can become neither" a I will seek his own, but another time, or he shuns it is so, but we reject the pleasure of all is what man is there it is either held in the pleasures of the pain that we can become neither" a</p>
               </div>
           </main>
         </div>
