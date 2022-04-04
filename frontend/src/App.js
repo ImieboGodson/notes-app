@@ -13,6 +13,7 @@ import Signup from './pages/Signup/Signup';
 import Collection from './pages/Collection/Collection';
 import NotePage from './pages/Note/Note';
 import Note from './components/note/Note';
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
     <div className="App">
 
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/login" element={ <Login /> } />

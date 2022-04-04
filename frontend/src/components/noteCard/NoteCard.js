@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { IoAddSharp } from "react-icons/io5"
 import './noteCard.css'
 
@@ -7,15 +7,16 @@ const NoteCard = ({ note }) => {
 
     const [clicked, setClicked] = useState(false)
 
-    const onNoteClicked = () => {
-            (clicked) 
-            ? 
-            setClicked(true)
-            :
-            setClicked(false)
+    // const onNoteClicked = () => {
+    //         (clicked) 
+    //         ? 
+    //         setClicked(true)
+    //         :
+    //         setClicked(false)
 
-            console.log('Note Clicked?', clicked)
-    }
+    //         console.log('Note Clicked?', clicked)
+    // }
+
 
     const NoteCardSmall = () => {
         return (
@@ -91,7 +92,7 @@ const NoteCard = ({ note }) => {
     }
 
     return (
-        <div onClick={ () => setClicked(!clicked)}>
+        <div className='mainNoteCardContainer' onClick={ () => setClicked(!clicked)}>
             {
                 (clicked)
                 ?
