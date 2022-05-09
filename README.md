@@ -80,7 +80,7 @@ This project is a result of experimental thoughts of what the idea notes app sho
     npm install
   ```
 
-- After a successful installation, you can now start the each part of the app.
+- After a successful installation, you can now start up each part of the app.
   
 - In frontend and backend folder
   
